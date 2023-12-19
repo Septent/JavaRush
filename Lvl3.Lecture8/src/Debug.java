@@ -8,8 +8,8 @@
  * В итоге в классе Solution должно быть только одно изменение: поле result должно быть инициализировано при объявлении.
  */
 
-public class App {
-    public static int result;
+public class Debug {
+    public static int result = 105;
 
     public static void main(String[] args) {
         byte correction = Byte.MAX_VALUE;
