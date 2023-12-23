@@ -11,26 +11,15 @@ package Lvl6.Lecture5;
 
 public class Substrings {
     public static void main(String[] args) {
-       /* String path = "/usr/java/jdk1.8/bin/";
+        String path = "/usr/java/jdk1.8/bin/";
 
         String jdk13 = "jdk-13";
         System.out.println(changePath(path, jdk13));
-*/
-        String path = "/usr/java/jdk1.8/bin/";
-        String jdk13 = "jdk-13";
-        path = changePath(path, jdk13);
-        System.out.println(path);
-        jdk13 = "jdk-130";
-        path = changePath(path, jdk13);
-        System.out.println(path);
-        jdk13 = "jdk-abra-kadabra";
-        path = changePath(path, jdk13);
-        System.out.println(path);
     }
 
     public static String changePath(String path, String jdk) {
-        String subStr1 = path.substring(0, path.indexOf("jdk"));
-        String subStr2 = path.substring(path.indexOf("/", path.indexOf("jdk")), path.length());
-        return subStr1 + jdk + subStr2;
+        String[] str = path.split("/");
+        str[3] = jdk;
+        return String.join("/", str);
     }
 }
