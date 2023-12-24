@@ -1,4 +1,4 @@
-package Lvl6.Lexture6;
+package Lvl6.Lecture6;
 
 import java.util.Arrays;
 import java.util.StringTokenizer;

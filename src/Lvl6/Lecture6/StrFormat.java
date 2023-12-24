@@ -1,4 +1,4 @@
-package Lvl6.Lexture6;
+package Lvl6.Lecture6;
 
 /*
  * Сделай так, чтобы метод format(String name, int salary) возвращал строку в таком виде:

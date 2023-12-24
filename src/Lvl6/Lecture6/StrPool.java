@@ -1,4 +1,4 @@
-package Lvl6.Lexture6;
+package Lvl6.Lecture6;
 
 /*
  * Метод equal(String, String) сравнивает строки по ссылке, используя оператор ==.
