@@ -28,18 +28,14 @@ class Iphone {
     }
 
     public boolean equals(Object obj) {
+        if (obj == null) return false;
+        else if (this.model == null) return false;
+        else if (this.color == null) return false;
+
         Iphone iphone = (Iphone) obj;
 
-        if (!this.model.equals(iphone.model)) return false;
-        
-        else if (!this.color.equals(iphone.color)) return false;
+        if (this.price != iphone.price) return false;
 
-        else if (this.price != iphone.price) return false;
-
-        else if (this.model == null) return iphone.model == null;
-
-        else if (this.color == null) return iphone.color == null;
-
-        else return true;
+        return this.model.equals(iphone.model) && this.color.equals(iphone.color);
     }
 }
