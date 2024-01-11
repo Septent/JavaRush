@@ -53,4 +53,14 @@ public class TextNumbers {
         }
         return result;
     }
+
+    public static int i = 0;
+
+    public static void prnt() {
+        System.out.println(i);
+    }
+
+    public static void priiint() {
+        prnt();
+    }
 }
