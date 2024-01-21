@@ -29,11 +29,13 @@ class NewLinkedList {
     private static int count = 0;
 
     public void printAll() {
+        System.out.println(first.prev + "\t" + first.value + "\t" + first.next + "\t" + first);
         Node currentElement = first.next;
         while ((currentElement) != null) {
-            System.out.println(currentElement.value);
+            System.out.println(currentElement.prev + "\t" + currentElement.value + "\t" + currentElement.next + "\t" + currentElement);
             currentElement = currentElement.next;
         }
+        System.out.println(last.prev + "\t" + last.value + "\t" + last.next + "\t" + last);
     }
 
     public void add(String value) {
@@ -48,9 +50,9 @@ class NewLinkedList {
             Node newNode = new Node();
             newNode.value = value;
             newNode.next = null;
+            last.prev.next = newNode;
             newNode.prev = last.prev;
             
-
             last.prev = newNode;
         }
         count++;
