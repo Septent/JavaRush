@@ -12,10 +12,12 @@ public class AbsolutePath {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String str = scanner.nextLine();
+        scanner.close();
         Path path = Path.of(str);
         if (path.isAbsolute()) {
             System.out.println(path);
+        } else {
+            System.out.println(path.toAbsolutePath());
         }
-        
     }
 }
