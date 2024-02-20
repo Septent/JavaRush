@@ -42,7 +42,7 @@ public class VillariboAndVillabaggio {
     }
 
     public static void playOrchestra() {
-        for(var instrument : orchestra) {
+        for (var instrument : orchestra) {
             instrument.play();
         }
     }
