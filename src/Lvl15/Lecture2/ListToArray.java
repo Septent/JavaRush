@@ -36,11 +36,9 @@ public class ListToArray {
 
     public static String[] toStringArray(ArrayList<String> strings) {
         return strings.toArray( String[]::new );
-        //return new String[]{};
     }
 
     public static Integer[] toIntegerArray(ArrayList<Integer> integers) {
         return integers.toArray( Integer[]::new );
-        //return new Integer[]{};
     }
 }
