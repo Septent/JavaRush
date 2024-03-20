@@ -7,7 +7,7 @@ package Lvl19.Lecture2;
 public class FourMistakes {
     public static void main(String[] args) {
 
-        System.out.println(Hobby.HOBBY.toString());
+        System.out.println(Dream.HOBBY.toString());
         System.out.println(new Hobby().toString());
 
     }
