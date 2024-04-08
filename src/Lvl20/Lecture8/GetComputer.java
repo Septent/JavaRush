@@ -1,10 +1,5 @@
 package Lvl20.Lecture8;
 
-import javax.management.monitor.Monitor;
-
-import Lvl19.Lecture6.DogCatMouse.Mouse;
-import Lvl7.Lecture6.Computer;
-
 /*
  * Давай соберем компьютер. Вот что тебе нужно сделать:
  * 1. Создай интерфейс CompItem.
