@@ -29,15 +29,12 @@ public class MovieFactoryTask {
 
         while (true) {
             key = reader.readLine();
-
-            
-
             movie = MovieFactory.getMovie(key);
-            
 
             if (!(key.equals("cartoon") || key.equals("thriller") || key.equals("soapOpera"))) {
                 break;
             }
+            
             System.out.println(movie.getClass().getSimpleName());
         }
 
