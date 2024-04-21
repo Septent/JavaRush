@@ -12,7 +12,7 @@ public class StaticsAndCats {
     public static Cat cat;
     static {
         cat = new Cat();
-        cat.name = "123";
+        cat.name = "Timofey";
         System.out.println(cat.name);
     }
 
@@ -22,9 +22,5 @@ public class StaticsAndCats {
 
     public static class Cat {
         public String name;
-
-        public Cat() {
-            this.name = "Timofey";
-        }
     }
 }
