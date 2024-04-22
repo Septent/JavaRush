@@ -1,8 +1,8 @@
 package Lvl21.Lecture12;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Scanner;
 
 /*
  * В этой задаче тебе нужно:
@@ -27,19 +27,20 @@ public class MasteringStaticBlock {
 
     public static CanFly result;
 
-    public static void reset() {
+    public static void reset() throws IllegalArgumentException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        Scanner scanner = new Scanner(reader);
-        String key = scanner.nextLine();
-
-        if (key.equals("helicopter")) {
-            result = new Helicopter();
-        } else if (key.equals("plane")) {
-            key = scanner.nextLine();
-            result = new Plane(Integer.parseInt(key));
+        try {
+            String key = reader.readLine();
+            if ("plane".equals(key)) {
+                key = reader.readLine();
+                result = new Plane(Integer.parseInt(key));
+            } else if ("helicopter".equals(key)) {
+                result = new Helicopter();
+            }
+            reader.close();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
-
-        scanner.close();
     }
 
     interface CanFly {
