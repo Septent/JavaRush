@@ -29,7 +29,6 @@ public class HorseRacing {
             else {
                 System.out.println("Waiting for " + horse.getName());
                 horse.join();
-                finishedCount++;
             }
         }
         return finishedCount;
