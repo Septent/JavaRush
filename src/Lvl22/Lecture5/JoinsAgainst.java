@@ -18,7 +18,7 @@ public class JoinsAgainst {
 
     private static void investigateWorld() {
         try {
-            Thread.sleep(2000);
+            Thread.sleep(200);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
