@@ -30,14 +30,13 @@ public class CountingTheSeconds {
 
         public void run() {
             Thread current = Thread.currentThread();
-
-            while(!current.isInterrupted()) {
-                try {
-                        Thread.sleep(1000);
-                        seconds++;
-                } catch (InterruptedException e) {
-                    System.out.println(seconds);
+            try {
+                while(!current.isInterrupted()) {
+                    Thread.sleep(1000);
+                    seconds++;
                 }
+            } catch (InterruptedException e) {
+                System.out.println(seconds);
             }
         }
     }
